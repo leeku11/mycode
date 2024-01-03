@@ -1,5 +1,7 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <stdbool.h>
+
 #define TEST_IDX	10000
 int tstNums[TEST_IDX];
 
@@ -19,7 +21,7 @@ int initTstNums(int *num, int size)
 
 	for(i = 0; i < size; i++)
 	{
-		num[i] = rand(i) % (size*2);
+		num[i] = rand() % (size*2);
 	}
 	printArray(num, 0, size - 1);
 }

@@ -5,7 +5,7 @@
 
 #define MAX_LEN	10000
 
-char *str = "luffy is still joyboya  ";
+char *str = "luffy is still joyboya";
 
 int printArray(int *num, int length)
 {
@@ -14,14 +14,14 @@ int printArray(int *num, int length)
 	{
 		printf("%d ", num[i]);
 	}
-	printf("	: %d\n", length);
+	printf("	: %d\n", length); 
 }
 
 
 int lengthOfLastWord(char * s){
 	int i;
 	int lenLast;
-
+	  
 	i 		= 0;
 	lenLast = 0;
 	while(*s != '\0')
@@ -36,7 +36,7 @@ int lengthOfLastWord(char * s){
 		}else
 		{
 			i++;
-		}
+		} 
 		s++;
 	}
 	if(i != 0)
